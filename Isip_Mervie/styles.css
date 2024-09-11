@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.name {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333; /* Dark color for good contrast */
+    margin: 0;   /* Remove default margin */
+    text-align: center; /* Center text horizontally within .name */
+}
+
+.title {
+    font-size: 1.5em;
+    color: #666; /* Slightly lighter color */
+    margin: 0;   /* Remove default margin */
+    text-align: center; /* Center text horizontally within .title */
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #0056b3;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    color: #0056b3;
+    margin-top: 1.5rem;
+}
+
+.content p, blockquote {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0056b3;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}

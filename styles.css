@@ -1,0 +1,488 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('main.jpg.jpeg');
+  background-size: cover; /* Ensure the background image covers the entire body */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-attachment: fixed; /* Keep the background fixed while scrolling */
+  color: #d5d3d317;
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Ensure all elements use border-box model */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: transparent !important; /* Make the navbar background transparent */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for better definition */
+}
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background when scrolled */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for better visibility when scrolled */
+}
+.navbar-brand, .nav-link {
+  color: #fff !important; /* Ensure text color is white for better visibility */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Add a subtle text shadow for better readability */
+}
+.navbar-toggler-icon {
+  background-color: #000000; /* Ensure the toggler icon is visible */
+}
+
+/* Header */
+.hero {
+  background-image: url('main.jpg');
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  height: 100vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* White */
+  text-align: center;
+  position: relative;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay for better text visibility */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content img {
+  border-radius: 50%; /* Perfectly round image */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid #f57f17; /* Golden Orange Border */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+  color: #ffeb3b; /* Bright Yellow */
+}
+
+.hero-content h2 {
+  font-size: 1.6rem;
+  color: #f57f17; /* Golden Orange */
+}
+
+/* About Section */
+.about-section {
+  padding: 20px 10px;
+  background-image: url('about.1.jpg');
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  color: #fff; /* White Text */
+  text-align: center;
+}
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px; /* Spacing below the title */
+  color: #ffeb3b; /* Bright Yellow */
+  font-weight: bold; /* Bold Title */
+}
+/* Hobbies & Interests Section */
+.hobbies-section {
+  padding: 20px 10px;
+  background-image: url('tools.jpg');
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  color: #fff; /* White Text */
+  text-align: center;
+}
+.hobbies-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px; /* Spacing below the title */
+  color: #ffeb3b; /* Bright Yellow */
+  font-weight: bold; /* Bold Title */
+}
+
+.hobbies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hobby {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.hobby i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffeb3b;
+}
+/* Skills Section */
+.skills-section {
+  padding: 60px 20px;
+  background-image: url('skills.jpg');
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  color: #fff;
+  text-align: center;
+  position: relative; /* For overlay positioning */
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px; /* Spacing below the title */
+  color: #ffeb3b; /* Bright Yellow */
+  font-weight: bold; /* Bold Title */
+}
+
+.skills-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative; /* Ensure content is above the overlay */
+  z-index: 2;
+}
+
+.skill {
+  margin: 15px;
+  padding: 20px;
+  background-color: #fffbfb; /* White */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.skill h3 {
+  color: #ffeb3b; /* Bright Yellow */
+  margin-bottom: 10px;
+}
+
+.skill p{
+  color: #000000; 
+}
+
+/* Blog Section */
+.blog-section {
+  padding: 60px 20px;
+  background-image: url('blog.jpg');
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  color: #fff;
+  text-align: center;
+  position: relative; /* For overlay positioning */
+}
+
+
+.blog-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px; /* Spacing below the title */
+  color: #ffeb3b; /* Bright Yellow */
+  font-weight: bold; /* Bold Title */
+}
+
+.blog-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative; /* Ensure content is above the overlay */
+  z-index: 2;
+}
+
+.blog-post {
+  margin: 15px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.blog-post h3 {
+  color: #ffeb3b; /* Bright Yellow */
+}
+
+.blog-post p {
+  color: #333;
+}
+
+
+/* Projects Section */
+.projects-section {
+  padding: 20px 10px;
+  background-image: url('project.jpg');
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  color: #fff; /* White Text */
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px; /* Spacing below the title */
+  color: #ffeb3b; /* Bright Yellow */
+  font-weight: bold; /* Bold Title */
+}
+
+/* Project Card Container */
+.project-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted min width for better fit */
+  gap: 20px; /* Increased space between cards */
+  margin: 0 auto; /* Center container within its parent */
+  max-width: 1200px; /* Adjusted max-width for better alignment */
+  padding: 0 20px; /* Padding to ensure space on the sides */
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 1rem; /* Adjusted padding */
+  margin: 1rem auto; /* Center cards within container */
+  text-align: center;
+  max-width: 250px; /* Set max-width */
+  min-height: 300px; /* Minimum height to ensure content visibility */
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  overflow: hidden; /* Hide overflow */
+  position: relative; /* For overlay positioning */
+}
+
+/* Project Card Content */
+.project-card-content {
+  position: relative; /* For overlay positioning */
+  z-index: 1; /* Ensure text is above overlay */
+  padding: 15px; /* Add padding inside the card */
+}
+
+/* Background Overlay */
+.project-card-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7); /* White overlay with transparency */
+  z-index: -1; /* Place behind text */
+}
+
+/* Text Content */
+.project-card h3, .project-card p {
+  color: #333; /* Dark Gray for better readability */
+  margin: 10px 0; /* Spacing around text */
+  font-family: 'Poppins', sans-serif; /* Consistent font family */
+}
+
+/* Images */
+.project-card img {
+  width: 100%; /* Full width */
+  height: 150px; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #ffeb3b; /* Bright Yellow */
+  color: #333; /* Dark Text */
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #fbc02d; /* Darker Yellow */
+}
+
+/* Tools Section */
+.tools-section {
+  padding: 60px 20px;
+  background-image: url('about.jpg');
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  color: #ffffff; /* White */
+  text-align: center;
+}
+.tools-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px; /* Spacing below the title */
+  color: #ffeb3b; /* Bright Yellow */
+  font-weight: bold; /* Bold Title */
+}
+
+.tools-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tool {
+  margin: 15px;
+  text-align: center;
+}
+
+.tool i {
+  color: #ffeb3b; /* Bright Yellow */
+  font-size: 2rem; /* Larger icons */
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 60px 20px;
+  background-image: url('testimonials.jpg');
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  color: #fff; /* White Text */
+  text-align: center;
+}
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px; /* Spacing below the title */
+  color: #ffeb3b; /* Bright Yellow */
+  font-weight: bold; /* Bold Title */
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background-color: #ffffff; /* White */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  color: #333; /* Dark Gray for text inside the card */
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #333; /* Dark Gray */
+  font-size: 1rem; /* Adjust font size for readability */
+  line-height: 1.5; /* Increase line height for better readability */
+}
+
+.testimonial-card h3 {
+  margin: 0;
+  font-size: 1.2rem; /* Adjust font size for readability */
+  color: #00796b; /* Match the section color for headings */
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  background-image: url('contact.jpg');
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  color: #fff; /* White Text */
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px; /* Spacing below the title */
+  color: #ffeb3b; /* Bright Yellow */
+  font-weight: bold; /* Bold Title */
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-section button {
+  background-color: #ffeb3b; /* Bright Yellow */
+  color: #333; /* Dark Text */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-section button:hover {
+  background-color: #fbc02d; /* Darker Yellow */
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #ffeb3b; /* Bright Yellow */
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-image: url('background.jpeg');
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  color: #000000; /* White */
+  text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}
